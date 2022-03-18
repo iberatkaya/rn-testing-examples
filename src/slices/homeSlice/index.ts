@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { User } from '../../modals/user';
+import { User } from '../../models/user';
 import { HomeState } from './types';
 
 // Define the initial state using that type

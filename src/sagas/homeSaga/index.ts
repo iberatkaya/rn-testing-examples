@@ -1,5 +1,5 @@
 import { call, put, takeEvery } from 'redux-saga/effects';
-import { User } from '../../modals/user';
+import { User } from '../../models/user';
 import {
   fetchUserFailure,
   fetchUserRequest,

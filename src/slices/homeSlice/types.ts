@@ -1,4 +1,4 @@
-import { User } from '../../modals/user';
+import { User } from '../../models/user';
 
 // Define a type for the slice state
 export interface HomeState {
