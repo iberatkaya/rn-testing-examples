@@ -9,12 +9,13 @@ import { sleep } from '../../utils';
 
 function* fetchUser(action: ReturnType<typeof fetchUserRequest>) {
   try {
+    // Mock an API call.
+    yield call(sleep, 2000);
     if (action.payload === '123') {
       const mockUser: User = {
         id: '123',
         name: 'John Doe',
       };
-      yield call(sleep, 3000);
       yield put(fetchUserSuccess(mockUser));
     } else {
       yield put(fetchUserFailure('User not found'));

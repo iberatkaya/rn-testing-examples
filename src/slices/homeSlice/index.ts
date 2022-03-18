@@ -21,6 +21,7 @@ export const homeSlice = createSlice({
     fetchUserSuccess: (state, action: PayloadAction<User>) => {
       state.isFetching = false;
       state.user = action.payload;
+      state.error = undefined;
     },
     fetchUserFailure: (state, action: PayloadAction<string>) => {
       state.isFetching = false;
