@@ -1,4 +1,3 @@
-import cloneDeep from 'lodash/cloneDeep';
 import React from 'react';
 import { act } from 'react-test-renderer';
 import waitForExpect from 'wait-for-expect';
